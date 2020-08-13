@@ -1,7 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     var loginButton = document.getElementById("loginbtn");
-    populateOptions();
+    var password = document.getElementById("password");
 
+    password.addEventListener("blur", function (event) {
+        if (!validateEmpty(event.target))
+            event.target.style.border = '2px solid red';
+        else
+            event.target.style.border = '1px solid black';
+    });
+
+    username.addEventListener("blur", function (event) {
+        if (!validateEmpty(event.target))
+            event.target.style.border = '2px solid red';
+        else
+            event.target.style.border = '1px solid black';
+    });
+
+    populateOptions();
     loginButton.addEventListener("click", function (event) {
         console.log(event)
         var errors = [];
@@ -29,6 +44,7 @@ function populateOptions() {
     console.log("Created Request.............")
     request.open("GET", "https://run.mocky.io/v3/d8a99df5-bec4-43ce-8ed0-3165f6b5e97b", true);
     console.log("Opened Connection ...................")
+
     request.onreadystatechange = function () {
         // this function will get called when ever the state changes 2, 3, 4 [completion]
         console.log("State Changed ................. ", request.readyState)
@@ -49,6 +65,8 @@ function populateOptions() {
     request.send();
     console.log("Sent Request ........................................")
 }
+
+
 function validateEmpty(elem) {
     if (elem.value == undefined || elem.value == null || elem.value == "") {
         return false;
