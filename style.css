@@ -1,0 +1,127 @@
+  /* comment in stylesheet */
+  body {
+      background-color: black;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  h3 {
+      color: lightgray;
+      text-align: center;
+  }
+
+  #instructions {
+      border: 1px solid white;
+      margin-top: 5px;
+      border-style: dashed;
+      padding-left: 5px;
+      padding-top: 2px
+  }
+
+  #instructionsvideo {
+      margin-top: 15px;
+      border: 2px white solid;
+      margin-left: calc(100% - 280px);
+      width: fit-content;
+  }
+
+  .pillet {
+      border: 1px solid white;
+      background-color: lightblue;
+      color: black;
+      padding: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+  }
+
+  #regsection {
+      margin-top: 10px;
+  }
+
+  #regfst {
+      border-radius: 10px;
+      border-top-color: orange;
+      border-bottom-color: orange;
+      border-left-color: aquamarine;
+      border-right-color: aquamarine;
+  }
+
+  .right-menu {
+      float: right;
+  }
+
+  .right-menu>img {
+      background-color: aliceblue;
+      width: 20px;
+  }
+
+  .form-input {
+      border-color: lightblue;
+      border-radius: 3px;
+      width: 100%;
+  }
+
+  .button-login {
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgb(14, 136, 14);
+      border-color: rgb(250, 247, 243);
+      border;
+      color: border: 1px solid goldbeige;
+      font-weight: bold;
+  }
+
+  table td {
+      padding-top: 10px;
+      padding-right: 30px
+  }
+
+  .mandatory {
+      color: rgb(212, 61, 61);
+      padding-left: 5px;
+  }
+
+
+  #commentbox {
+      border-radius: 10px;
+      border-color: green;
+  }
+
+  .alert-strip {
+      padding-top: 6px;
+      margin-top: 5px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 20px;
+      padding-left: 10px;
+      background-color: green;
+      color: white;
+      border: 1px solid gold;
+      min-height: 30px;
+  }
+
+  .error-strip {
+      padding-top: 6px;
+      margin-top: 5px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 20px;
+      padding-left: 10px;
+      background-color: red;
+      color: white;
+      border: 1px solid gold;
+      min-height: 30px;
+  }
+
+  .footer-strip {
+      width: 100%;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      text-align: center;
+      color: white;
+      background-color: coral;
+      font-stretch: expanded;
+      font-weight: bold;
+  }
