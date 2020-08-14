@@ -5,31 +5,43 @@
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  nav {
+      border-bottom: 1px gold solid;
+  }
+
   h3 {
       color: lightgray;
       text-align: center;
   }
+
+  h3:hover {
+      opacity: 40%;
+  }
+
 
   #instructions {
       border: 1px solid white;
       margin-top: 5px;
       border-style: dashed;
       padding-left: 5px;
-      padding-top: 2px
+      padding-top: 2px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
   }
 
   #instructionsvideo {
-      margin-top: 15px;
+      margin-top: 20px;
+      margin: auto;
       border: 2px white solid;
-      margin-left: calc(100% - 280px);
       width: fit-content;
   }
 
   .pillet {
-      border: 1px solid white;
+      border: 1px solid gold;
       background-color: lightblue;
       color: black;
-      padding: 5px;
+      padding-top: 3px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
   }
@@ -38,12 +50,19 @@
       margin-top: 10px;
   }
 
+  textarea {
+      width: 100%;
+  }
+
   #regfst {
+      margin: auto;
       border-radius: 10px;
       border-top-color: orange;
       border-bottom-color: orange;
       border-left-color: aquamarine;
       border-right-color: aquamarine;
+      max-width: fit-content;
+      flex: auto;
   }
 
   .right-menu {
@@ -51,8 +70,7 @@
   }
 
   .right-menu>img {
-      background-color: aliceblue;
-      width: 20px;
+      width: 17px;
   }
 
   .form-input {
@@ -67,8 +85,6 @@
       padding-right: 10px;
       background-color: rgb(14, 136, 14);
       border-color: rgb(250, 247, 243);
-      border;
-      color: border: 1px solid goldbeige;
       font-weight: bold;
   }
 
@@ -93,7 +109,7 @@
       margin-top: 5px;
       text-align: center;
       vertical-align: middle;
-      border-radius: 20px;
+      border-radius: 10px;
       padding-left: 10px;
       background-color: green;
       color: white;
@@ -106,7 +122,7 @@
       margin-top: 5px;
       text-align: center;
       vertical-align: middle;
-      border-radius: 20px;
+      border-radius: 10px;
       padding-left: 10px;
       background-color: red;
       color: white;
@@ -124,4 +140,16 @@
       background-color: coral;
       font-stretch: expanded;
       font-weight: bold;
+  }
+
+  #back-btn {
+      background-color: darkorchid;
+      border: 2px solid yellowgreen;
+      padding: 2px;
+      border-radius: 4px;
+      vertical-align: middle;
+      text-align: center;
+      color: silver;
+      float: right;
+      margin-right: 15px;
   }
